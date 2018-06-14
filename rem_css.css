@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img{
+    border: none;
+    vertical-align: top;
+}
+em,i{
+    font-style: normal;
+}
+header{
+    background-color: blanchedalmond;
+    padding-top: .6rem;
+    padding-left: .6rem;
+    padding-right: .6rem;
+}
+body{
+    font-family: punctuation, "PingFang SC", "Microsoft YaHei", "微软雅黑";
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+}
+.name{
+    font-size: .65rem;
+    color: #dd4532;
+    line-height: .85rem;
+    float: left;
+    padding-left: 10px;
+}
+.header_bar{
+    height: .85rem;
+    margin-bottom: .9rem;
+}
+.back{
+    float: left;
+    display: inline-block;
+    background-color: #e04e3a;
+    width: .7rem;
+    height: .7rem;
+}
+.shopCar{
+    float: right;
+    height: .7rem;
+    width: .7rem;
+    background-color: #e04e3a;
+    position: relative;
+    /*margin-right: 20px;*/
+}
+.shopCar i{
+    font-size: 12px;
+    line-height: .45rem;
+    border-radius: .225rem;
+    background-color: #fff;
+    padding: 0 .2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.btn{
+    padding-bottom: 10px;
+}
+.btn a{
+    display: inline-block;
+    width: 7.174rem;
+    height: 1.575rem;
+    border-radius: 3px;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    line-height: 1.575rem;
+}
+.gw{
+    background-color: #343434;
+}
+.gwc{
+    background-color: aqua;
+}
+
+.banner{
+    margin: .6rem;
+    background-color: white;
+    border-radius: .625rem;
+    box-shadow: 0 2px 4px rgba(0,0,0, .4);
+    /* position: relative; */
+}
+.banner_ul{
+   /* width: 300%; */
+}
+.banner_ul li{
+    float: left;
+    overflow: hidden;
+    margin: 5px;
+}
+.banner_ul img{
+    width: 100%;
+    border-radius: .625rem;
+    
+}

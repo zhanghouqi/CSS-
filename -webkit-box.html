@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background-color: lightblue;
+        }
+        .box{
+            width: 280px;
+            height: 188px;
+            background-color: white;
+            margin: 30px auto;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+        }
+        .user{
+            flex: 1;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+        }
+        .user img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 18px;
+        }
+        .userInfo{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;//垂直居中
+            /*align-items: center;*///水平居中
+        }
+        .list{
+            height: 64px;
+            display: flex;
+        }
+        .list li{
+            flex: 1;
+            color: white;
+            text-align: center;
+        }
+        .list li:nth-child(1){
+            background-color: #4bb2b4;
+        }
+        .list li:nth-child(2){
+            background-color: #e1e870;
+        }
+        .list li:nth-child(3){
+            background-color: #90b629;
+        }
+        .list li span{
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: gray;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="user">
+            <img src="photo.jpg" alt="">
+            <div class="userInfo">
+                <h3>爱上对方</h3>
+                <p>描述</p>
+            </div>
+        </div>
+
+        <ul class="list">
+            <li><span></span>abc</li>
+            <li><span></span>abv</li>
+            <li><span></span>aaa</li>
+        </ul>
+    </div>
+
+</body>
+</html>

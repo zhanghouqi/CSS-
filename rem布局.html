@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rem布局</title>
+    <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1">
+    <script>
+        (function setSize(){
+            var html = document.getElementsByTagName('html')[0];
+            var ch = document.documentElement.clientWidth;
+
+            ch>640? html.style.fontSize = '40px' : html.style.fontSize = ch / 16 + 'px';
+            window.onresize = setSize;
+        })();
+
+    </script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="rem_css.css">
+</head>
+<body>
+
+    <header>
+        <div class="header_bar">
+            <span class="back"></span><span class="name">Woman,Dress</span> <span class="shopCar"><i>3</i></span>
+        </div>
+        <div class="btn clearfix">
+            <a href="#" class="gw fl">add to wishlist</a><a href="#" class="gwc fr">what</a>
+        </div>
+    </header>
+
+    <div class="banner clearfix">
+        <ul class="banner_ul">
+            <li><img src="image01.jpg" alt=""></li>
+            <li><img src="image01.jpg" alt=""></li>
+            <li><img src="image01.jpg" alt=""></li>
+        </ul>
+        <div class="banner_text">
+            <p class="banner_infor">Elegant Pink Dresser</p>
+            <a href="" class="banner_btn">$605,00</a>
+        </div>
+    </div>
+
+</body>

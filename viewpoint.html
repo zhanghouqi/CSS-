@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viewport</title>
+    <!--<meta name="viewport"  id="viewport" content="width:375,initial-scale=1,user-scalable=0">-->
+    <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1">
+    <script>
+        var html = document.getElementsByTagName('html')[0];
+        var ch = document.documentElement.clientWidth;
+        if (ch>640){
+            html.style.fontSize = '40rem';
+        }else {
+            html.style.fontSize = ch / 40 + 'px';
+        }
+    </script>
+    <style>
+        html{
+            font-size: 30px;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 7.5rem;
+            height: 7.5rem;
+            background-color: greenyellow;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+
+    </div>
+
+</body>
+</html>
